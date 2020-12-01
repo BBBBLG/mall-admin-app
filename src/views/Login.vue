@@ -77,7 +77,7 @@ export default {
             .then((res) => {
               this.$store.dispatch('setUserInfo', res);
               this.$message.success('登陆成功，即将跳转首页！');
-              // 三秒后自动跳转
+              // 三秒后自动跳转首页
               setTimeout(() => {
                 this.$router.push({
                   name: '/statistics',
